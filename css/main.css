@@ -163,18 +163,24 @@ main {
 .about-info {
   display: grid;
   gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    height: 400px;
+  grid-template-areas: "bioimage bio bio" "job1 job1 job1";
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem; }
+  .about-info .about-me-image {
     margin: auto;
+    grid-area: bioimage;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: lightblue 3px solid; }
+    background: url(../img/portrait.jpg);
+    border: solid 3px lightblue;
+    background-position: center;
+    background-size: cover; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
+    text-align: center;
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
@@ -188,7 +194,7 @@ main {
 .projects {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
   .projects img {
     width: 100%;
     border: 3px white solid; }
