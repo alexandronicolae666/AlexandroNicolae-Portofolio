@@ -83,15 +83,20 @@ main {
   gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "job1 job1 job1";
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
 
-  .bio-image {
-    grid-area: bioimage;
-    height: 400px;
+  .about-me-image {
     margin: auto;
+    grid-area: bioimage;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    background: url(../img/portrait.jpg);
+    border: solid 3px $secondary-color;
+    background-position: center;
+    background-size: cover;
   }
 
   .bio {
@@ -100,6 +105,7 @@ main {
   }
 
   .job-1 {
+    text-align: center;
     grid-area: job1;
   }
 
@@ -122,7 +128,7 @@ main {
 .projects {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   img {
     width: 100%;
