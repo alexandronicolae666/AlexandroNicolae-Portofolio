@@ -227,9 +227,6 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: lightblue;
-    color: black; }
 
 .btn-dark {
   background: black;
